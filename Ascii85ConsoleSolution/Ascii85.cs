@@ -64,6 +64,8 @@ class Ascii85
 			s = s.Substring(0, s.Length - SuffixMark.Length);
 		}
 
+    _tuple = 0;
+
 		MemoryStream ms = new MemoryStream();
 		int count = 0;
 		bool processChar = false;
