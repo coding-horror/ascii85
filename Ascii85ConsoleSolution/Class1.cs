@@ -87,5 +87,12 @@ class Class1
 		Console.WriteLine();
 		Console.WriteLine("Decoded " + decoded.Length + " chars");
 		Console.WriteLine();
-	}
+
+    byte[] decoded2 = a.Decode(encoded);
+    Console.WriteLine(Encoding.ASCII.GetString(decoded2));
+
+    Console.WriteLine("Equal results from multiple Decode calls?\t" + Encoding.ASCII.GetString(decoded) == Encoding.ASCII.GetString(decoded2));
+
+    Console.ReadKey();
+  }
 }
