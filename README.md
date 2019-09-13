@@ -10,4 +10,7 @@ See also
 
 https://github.com/ssg/SimpleBase#base85
 
+License
+=======
+
 MIT License
